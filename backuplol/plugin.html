@@ -1,0 +1,225 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Plugins</title>
+    <link rel=stylesheet href=style.css>
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons&display=block" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <script src="./node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+  </head>
+  
+  <body>
+   <mwc-drawer hasHeader type="modal">
+    <span slot="title">Aliucord</span>
+     <div class="block">
+      <a href="download.html">Download</a><br>
+      <a href="index.html">Home</a><br>
+      <a href="plugin.html" class="ablock" >Plugins</a><br>
+      <a href="contribute.html">Contribution</a><br>
+     </div>
+     <div slot="appContent">
+      <mwc-top-app-bar-fixed centerTitle>
+	<mwc-icon-button icon="menu" slot="navigationIcon"></mwc-icon-button>
+	<div slot="title">Plugins</div>
+      </mwc-top-app-bar-fixed>
+     </div>
+   </mwc-drawer>
+   <script type="module">
+import '@material/mwc-top-app-bar-fixed';
+import '@material/mwc-icon-button';
+import '@material/mwc-drawer';
+import '@material/mwc-icon';
+
+const drawer = document.getElementsByTagName('mwc-drawer')[0]
+									    if (drawer) {
+	const container = drawer.parentNode;
+	container.addEventListener('MDCTopAppBar:nav', () => {
+	drawer.open = !drawer.open;
+      });
+     }
+     </script>
+    <div class=main>
+      <h1 class=main>Plugin List:</h1>
+    </div>
+    <div class=card>
+      <h3>Juby210:</h3>
+      <p>1.- BetterCodeBlocks</p>
+      <p>Makes codeblocks better by adding new languages, improving already existing and more.<br><br>
+
+2.- BetterStatusIndicators <br><br>
+Adds a lot of customization for status indicators (platform indicators, radial status, etc).
+It is a rewritten version of Butterfly3ffect's BetterStatus with hopefully less bugs and better code.<br><br>
+
+3.- CustomNicknameFormat<br><br>
+Allows you to customize nickname format.<br><br>
+
+4.- CustomTimestamps<br><br>
+Custom timestamps format everywhere.<br><br>
+
+5.- Experiments<br><br>
+Shows hidden Developer Options tab with Experiments.<br><br>
+
+6.- MessageLogger<br><br>
+Temporary saves deleted and edited messages. WIP. Released version without all planned features because a lot of people asked.<br><br>
+TODO: https://github.com/Juby210/Aliucord-plugins#messagelogger<br><br>
+
+7.- MoreSlashCommands<br><br>
+Adds more slash commands. (lenny, mock, spoilerfiles, owoify, upper, lower)<br><br>
+
+8.- NoAutoReplyMention<br><br>
+Disables reply mention by default.<br><br>
+
+9.- NoCopyEmbeds<br><br>
+Disables copying text from embeds.<br><br>
+
+10.- OwoifyEverything<br><br>
+Makes your Discord owo.<br><br>
+
+11.- PronounDB<br><br>
+Shows other's people pronouns in chat, so your chances of mis-gendering them is low. Service by pronoundb.org.<br><br>
+
+12.- RemoveZoomLimit<br><br>
+Removes maximum (and minimum) zoom limit.<br><br>
+
+13.- RestoreImageLinks<br><br>
+Restores image links in chat.<br><br>
+
+14.- ShowReplyMention<br><br>
+Fixes showing @ in replies.<br><br>
+
+15.- SquareAvatars<br><br>
+Display square avatars instead of circles.<br><br>
+
+16.- Tags<br><br>
+Allows you to send custom tags. (port of powercord's tags)<br><br>
+
+17.- UserDetails<br><br>
+Displays when user created account, joined to server and when sent last message in selected server / dm.<br><br>
+
+18.- ViewRaw<br><br>
+View & Copy raw message and markdown.</p>
+      <a href=https://discord.com/channels/811255666990907402/811275162715553823/835554229484519484>URL</a>
+    </div>
+    <div class="card">
+      <h3>Xinto:</h3>
+      <p>19.- Gnuify <br><br>
+Appends "GNU/" prefix to every word in the sentence.<br><br>
+
+20.- LayoutController<br><br>
+Lets you control the discord mobile layout.<br><br>
+
+21.- Lyrics<br><br>
+Get lyrics to a specific song.<br><br>
+
+22.- NanomachinesSon<br><br>
+Returns a copypasta of Senator Armstrong's political speech.<br><br>
+
+23.- Nitrospoof<br><br>
+Use nitro emotes without nitro.<br><br>
+
+24.- ShowHiddenChannels<br><br>
+Allows you to see hidden channels in servers.<br><br>
+
+25.- Stallman<br><br>
+Replace "Linux" in the GNU/Linux copypasta with your desired phrase.<br></p>
+      <a href=https://github.com/X1nto/AliucordPlugins>URL</a>
+    </div>
+    <div class="card">
+      <h3>Vendicated:</h3>
+      <p>
+26.- EmojiUtility<br><br>
+Adds lots of emoji utilities such as cloning and downloading<br><br>
+
+27.- MessageLinkEmbeds<br><br>
+Embeds message links <br><br>
+
+28.- Themer<br><br>
+Applies custom themes from #themes <br><br>
+
+29.- BetterSpotify<br><br>
+Improved Spotify Integration (listen along)<br><br>
+
+30.- ViewProfileImages<br><br>
+Allows you to open user & server avatars/banners by tapping them, similar to attachments or embeds<br><br>
+
+31.- DedicatedPluginSettings<br><br>
+Adds a dedicated plugin settings category (quite similar to that of Powercord) in the settings page right below Aliucord's settings.<br><br>
+
+32.- AnimateApngs<br><br>
+Simple plugin that makes apngs animate just like gifs<br><br>
+
+33.- TapTap<br><br>
+Double-tap someone elses message to quick reply, double tap your own to quick edit<br><br>
+
+34.- CheckLinks<br><br>
+Simple plugin that checks links using the VirusTotal api and shows the result in the "Are you sure you want to open this link" modal<br><br>
+
+35.- PlayableEmbeds<br><br>
+Makes Youtube and Spotify embeds playable directly inside Discord<br><br>
+
+36.- FixEmotes<br><br>
+Fixes some emotes being unusable if you have two emotes with the same name but different casing (eg Yeh and yeh, yeh becomes unusable)<br><br>
+
+37.- TextFilePreview<br><br>
+Preview the contents of text files<br><br>
+</p>
+      <a href=https://github.com/Vendicated/AliucordPlugins>URL</a>
+    </div>
+    <div class="card">
+      <h3>zt:</h3>
+      <p>38.- NoBurnIn<br><br>
+Removes the top bar from the top of the chat to prevent burn in on amoled screens, as its features can all be accessed elsewhere. Maybe later I'll add more stuff <br><br>
+
+39.- CursorInput<br><br>
+Makes tapping emojis, usernames, and other similar elements add text at the current cursor position, instead of at the end<br><br>
+
+40.- RandomEmote<br><br>
+Makes long press on the emoji button send a random emote<br><br>
+
+41.- NoLinkify<br><br>
+Disables highlighting for phone numbers and addresses in messages<br><br>
+
+42.- AlwaysAnimate<br><br>
+Allows making server icons and user avatars always animate<br><br>
+
+43.- RoleColorEverywhere<br><br>
+Changes text color in specific areas to match the users highest role. Currently supports mentions, voice users, and typing users, with options to change whats colored<br><br>
+
+44.- FolderOpacity<br><br>
+Adds an option to the guild folder settings to set the opacity.<br><br>
+
+RestartButton<br><br>
+Adds a restart button to the toolbar on the settings page which fully restarts the app. <br><br>
+
+45.- AvatarMention<br><br>
+Makes tapping a message avatar mention that user.<br><br>
+
+46.- QuickStar<br><br>
+Adds a button to the message context menu that when clicked a star reaction is added to the message, if permission is allowed in the channel.<br><br>
+
+47.- DisablePreviewsOnData<br><br>
+Disables media previews when on mobile data to limit data usage. Consider disabling Sync across clients in your Text & Images settings so that it doesn't sync to other devices.<br><br>
+
+48.- RotatedChat<br><br>
+Rotate your chat! Just set a rotation in the plugin settings.<br><br>
+
+49.- WiderScrollbar<br><br>
+Allows changing the chat scrollbar size, which can be accessed in the plugin settings. Currently effects the height too.<br><br>
+
+50.- Token<br><br>
+Adds a slash command, /token that tells you your account token. Do not share the token with anybody.<br><br>
+
+51.- Weather<br><br>
+Adds a weather slash command to show basic information for a location, like temperature and humidity. Uses wttr.in to fetch data.<br><br>
+
+52.- System Info<br><br>
+Adds a system-info command to show system information.<br><br>
+</p>
+<a href=https://github.com/zt64/aliucord-plugins>URL</a>
+    </div>
+    <div class="card">
+      <p>5.- Test</p>
+    </div>
+  </body>
+</html>

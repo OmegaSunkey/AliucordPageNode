@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Plugins</title>
+    <link rel=stylesheet href=style.css>
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons&display=block" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <script src="./node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+  </head>
+  
+  <body>
+   <mwc-drawer hasHeader type="modal">
+    <span slot="title">Aliucord</span>
+     <div class="block">
+      <a href="download.html">Download</a><br>
+      <a href="index.html">Home</a><br>
+      <a href="plugin.html" class="ablock" >Plugins</a><br>
+      <a href="contribute.html">Contribution</a><br>
+     </div>
+     <div slot="appContent">
+      <mwc-top-app-bar-fixed centerTitle>
+	<mwc-icon-button icon="menu" slot="navigationIcon"></mwc-icon-button>
+	<div slot="title">Plugins</div>
+      </mwc-top-app-bar-fixed>
+     </div>
+   </mwc-drawer>
+   <script type="module">
+import '@material/mwc-top-app-bar-fixed';
+import '@material/mwc-icon-button';
+import '@material/mwc-drawer';
+import '@material/mwc-icon';
+
+const drawer = document.getElementsByTagName('mwc-drawer')[0]
+									    if (drawer) {
+	const container = drawer.parentNode;
+	container.addEventListener('MDCTopAppBar:nav', () => {
+	drawer.open = !drawer.open;
+      });
+     }
+     </script>
+    <div class=main>
+      <h1 class=main>Plugin List:</h1>
+    </div>
+    <div class=card>
+	    
+      <h2>c10udburst:</h2>
+    </div>
+    <div class=cardo>
+	    <div class=child>
+      <h3>1.- At Someone</h3>
+      <p>@ Someone randomly on the server.</p>
+    </div>
+    <div class=child>
+      <h3>2.- Create Webhooks</h3>
+      <p>Create webhooks from the webhook management screen.</p>
+    </div>
+    <div class=child>
+      <h3>3.- Hidden Channels</h3>
+      <p>View the name and description of channels you can't access.</p>
+    </div>
+    <div class=child>
+      <h3>4.- MetroTools</h3>
+      <p>Useful for devs. Find modules using /commands.</p>
+    </div>
+    <div class=child>
+      <h3>5.- SilentTyping</h3>
+      <p>Makes Discord not send your typing indicator.</p>
+    </div>
+    <div class=child>
+      <h3>6.- Token</h3>
+      <p>Get your token via the token command.</p>
+    </div>
+    <div class=child>
+      <h3>7.- ViewProfileImages</h3>
+      <p>Allows you to open user or server avatars by tapping them, similar to attachments or embeds.</p>
+    </div>
+    </div>
+    <div class="card">
+      <h2>lexisother:</h2>
+
+    </div>
+    <div class=cardo>
+	    <div class=child>
+		    <h3>8.- All Mentions Reply</h3>
+		    <p>No description.</p>
+	    </div>
+	    <div class=child>
+		    <h3>9.- Experiments</h3>
+		    <p>No description.</p>
+	    </div>
+	    <div class=child>
+		    <h3>10.- FreeNitro</h3>
+		    <p>No description.</p>
+	    </div>
+	    <div class=child>
+		    <h3>11.- NoReplyMention</h3>
+		    <p>No description.</p>
+	    </div>
+    </div>
+  </body>
+</html>
